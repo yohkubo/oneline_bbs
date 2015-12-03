@@ -15,6 +15,7 @@
 <?php
 
 //データベースに接続
+//issetと合わせて!emptyというのも使える
 if (isset($_POST['nickname'], $_POST['comment'])) 
 {
 	$dsn = 'mysql:dbname=oneline_bbs;host=localhost';
