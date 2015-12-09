@@ -60,13 +60,13 @@
 	//issetと合わせて!emptyというのも使える
 	if (isset($_POST['nickname'], $_POST['comment'])) 
 	{
-		// $dsn = 'mysql:dbname=oneline_bbs;host=localhost';
-		// $user = 'root';
-		// $password = '';
+		$dsn = 'mysql:dbname=oneline_bbs;host=localhost';
+		$user = 'root';
+		$password = '';
 
-		$dsn = 'mysql:dbname=LAA0685925-onelinebbs;host=mysql105.phy.lolipop.lan';
-		$user = 'LAA0685925';
-		$password = 'nxseed1204';
+		// $dsn = 'mysql:dbname=LAA0685925-onelinebbs;host=mysql105.phy.lolipop.lan';
+		// $user = 'LAA0685925';
+		// $password = 'nexseed1204';
 
 		$dbh = new PDO($dsn, $user, $password);
 		$dbh->query('SET NAMES utf8');
